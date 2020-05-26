@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="img/navicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/pacientes.css">
+    <title>Consultório Nutrição</title>
+</head>
+<body>
+  <header>
+    <h1 id="GoMenu">Consultório Nutrição</h1><br>
+    <h1>Nutricionista <span class="titulo-nutricionista"></span></h1>
+  </header>
+  <main>
+
+    <!-- Treino Html/CSS -->
+    <div class="navbar"> 
+      <div class="dropdown">
+        <button class="dropbtn">Trabalhos</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a data-page="tema1" href="#tema1">Tema 1</a>
+            <a data-page="tema2" href="#tema2">Tema 2</a>
+            <a data-page="tema3" href="#tema3">Tema 3</a>
+            <a data-page="tema4" href="#tema4">Tema 4</a>
+            <a data-page="tema5" href="#tema5">Tema 5</a>
+        </div>
+      </div>      
+      <div class="dropdown">
+        <button class="dropbtn">Pesquisas</button>
+        <div id="myDropdown" class="dropdown-content">
+                <a data-page="pesquisas" href="#pesquisas">Surveys / Pesquisas</a>
+        </div>
+      </div>      
+      <div class="dropdown" id="myDropdown">
+        <a href="#section-paciente" data-page="section-paciente" style="padding: 11px 12px;">Pacientes</a>
+      </div>
+      <div class="dropdown">
+        <a href="creeper_canvas.html" style="padding: 11px 12px;">+</a>
+      </div>
+    </div>
+    </br>
+
+    <section>
+    <h4>Trabalhos</h4>
+    </section>
+    
+    <section id="tema1" class="tema1" data-page="tema1">
+    <p>Tema 1</p>
+    <a href="#">Ut eget libero sit amet ipsum venenatis lacinia ac ut odio</a><br/><br/>
+    <a href="#">Nam facilisis quam ut quam consectetur, in vestibulum erat feugiat</a><br/><br/>
+    </section>
+    
+    <section id="tema2" class="tema2" data-page="tema2">
+    <p>Tema 2</p>
+    <a href=“#”>Mauris eu enim tempor, bibendum dui at, scelerisque leo</a><br/><br/>
+    <a href="#">Nunc aliquet massa quis sagittis malesuada</a><br/><br/>
+    <a href="#">Sed ullamcorper augue vel efficitur fringilla</a><br/><br/>
+    </section>
+    
+    <section id="tema3" class="tema3" data-page="tema3">
+    <p>Tema 3</p>
+    <a href="#">Donec eget velit commodo, sodales velit in, ultricies leo</a><br/><br/>
+    </section>
+    
+    <section id="tema4" class="tema4" data-page="tema4">
+    <p>Tema 4</p>
+    <a href="#">Integer vehicula sapien ac semper congue</a><br/><br/>
+    <a href="#">Nunc tempus libero in nibh auctor</a><br/><br/>
+    </section>
+    
+    <section id="tema5" class="tema5" data-page="tema5">
+    <p>Tema 5</p>
+    <a href="#">Fusce et sapien in elit ullamcorper dapibus</a><br/><br/>
+    </section>
+    
+    </br></br>
+    <section>
+    <h4>Tarefas</h4>
+    </section>
+    
+    <section id="pesquisas" class="pesquisas" data-page="pesquisas">
+    <p>Surveys / Pesquisas</p>
+    <a href="#">Cras malesuada dui et consequat convallis</a><br/><br/>
+    <a href="#">Praesent ultrices turpis eget finibus laoreet</a><br/><br/>
+    <a href="#">Duis nec est nec libero rutrum placerat</a><br/><br/>
+    <a href="#">Sed ultrices nunc sed leo cursu</a><br/><br/>
+    </section>
+  
+    <br/><br/>
+    <section>
+      <h4>Pacientes</h4>
+    </section>
+
+    <!-- Treino JavaScript -->
+    <section id="section-paciente" class="section-paciente" data-page="section-paciente">      
+
+      <label for="filtrar-tabela" class="filtro">Filtrar por:</label>
+      <input type="text" name="filtro" id="filtrar-tabela" placeholder=" digite o nome do paciente">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Peso(kg)</th>
+            <th>Altura(m)</th>
+            <th>Gordura Corporal(%)</th>
+            <th>IMC</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-pacientes">
+          <tr class="paciente" id="primeiro-paciente">
+            <td class="info-nome">Paulo</td>
+            <td class="info-peso">100</td>
+            <td class="info-altura">2.00</td>
+            <td class="info-gordura">10</td>
+            <td class="info-imc">0</td>
+          </tr>
+
+          <tr class="paciente" >
+            <td class="info-nome">João</td>
+            <td class="info-peso">80</td>
+            <td class="info-altura">1.72</td>
+            <td class="info-gordura">40</td>
+            <td class="info-imc">0</td>
+          </tr>
+
+          <tr class="paciente" >
+            <td class="info-nome">Erica</td>
+            <td class="info-peso">54</td>
+            <td class="info-altura">1.64</td>
+            <td class="info-gordura">14</td>
+            <td class="info-imc">0</td>
+          </tr>
+
+          <tr class="paciente">
+            <td class="info-nome">Douglas</td>
+            <td class="info-peso">85</td>
+            <td class="info-altura">1.73</td>
+            <td class="info-gordura">24</td>
+            <td class="info-imc">0</td>
+          </tr>
+          <tr class="paciente" >
+            <td class="info-nome">Tatiana</td>
+            <td class="info-peso">46</td>
+            <td class="info-altura">1.55</td>
+            <td class="info-gordura">19</td>
+            <td class="info-imc">0</td>
+          </tr>
+        </tbody>
+      </table>
+      <span id="erro-ajax" class="invisivel">Erro ao fazer a busca</span>
+      <button type="button" id="buscar-paciente" class="botao bto-principal">Buscar</button>
+    </section>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <a class="button" href="#GoMenu" id="myBtn">Top</a>
+
+  </main>
+
+  <section class="container">
+    <h2 id="titulo-form">Adicionar novo paciente</h2>
+    <form id="form-adiciona">
+        <div class="grupo">
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text" placeholder="digite o nome do paciente" class="campo">
+        </div>
+        <div class="grupo">
+            <label for="peso">Peso:</label>
+            <input id="peso" name="peso" type="text" placeholder="digite o peso do paciente" class="campo campo-medio">
+        </div>
+        <div class="grupo">
+            <label for="altura">Altura:</label>
+            <input id="altura" name="altura" type="text" placeholder="digite a altura do paciente" class="campo campo-medio">
+        </div>
+        <div class="grupo">
+            <label for="gordura">% de Gordura:</label>
+            <input id="gordura" name="gordura" type="text" placeholder="digite a porcentagem de gordura do paciente" class="campo campo-medio">
+        </div>
+
+        <ul id="msgs-erro"></ul>
+        <button type="button" id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+    </form>
+  </section>
+  
+  <!-- Manipulação da tabela Paciente e do Titulo -->
+  <script src="js/titulo.js"></script>
+  <script src="js/calcula-imc.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/remove-paciente.js"></script>
+  <script src="js/filtro.js"></script>
+  <script src="js/busca-paciente.js"></script>
+
+  <footer>
+    <hr/>
+    <!-- <p> Caso tenha sugestões ou dúvidas, entre em contato para ampliarmos esse banco de dados: 
+    <a href="mailto:vanessaidenny@hotmail.com">Vanessa Denny</a></p><br/><br/>  -->
+  </footer>
+</body>
+</html>

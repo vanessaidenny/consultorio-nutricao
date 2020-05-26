@@ -1,0 +1,141 @@
+.tabelaPacientes{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.container, .section-paciente{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section .container {
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+.container h2{
+	font-size: 2em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+	margin-top: 40px;
+}
+
+table {
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th {
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label {
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo {
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	height: 10px;
+}
+
+.campo-medio {
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo {
+	font-size: 14px;
+	width: 40%;
+	display: inline-block;
+	padding: 10px 30px;
+}
+
+#adicionar-paciente, #buscar-paciente{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#1e0b8d;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+}
+
+#adicionar-paciente:active {
+	margin-top:0px;
+	border: 0;
+}
+
+#adicionar-paciente[disabled=disabled], #adicionar-paciente:disabled {
+    background-color: gray;
+	border-color: darkgray;
+}
+
+.adicionar-paciente {
+    margin-top: 30px;
+}
+
+.campo-invalido {
+	border: 1px solid lightcoral;
+}
+
+#mensagem-erro {
+	color: lightcoral;
+}
+
+.paciente-pesoInvalido {
+	background-color: orange;
+}
+.paciente-alturaInvalida {
+	background-color: lightcoral;
+}
+
+#msgs-erro, #erro-ajax {
+	color: red;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.filtro {
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+#filtrar-tabela {
+	width: 200px;
+	height: 20px;
+	margin: 10px auto;
+}
+
+.invisivel {
+	display: none;
+}
